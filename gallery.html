@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Fly Fit Gym</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Lightbox CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <style>
+        .gallery-item {
+            margin-bottom: 30px;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="Images/Logo.jpeg" alt="Fly Fit Gym Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Facilities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Gallery Hero Section -->
+    <section class="gallery-hero">
+        <div class="container">
+            <div class="row min-vh-100 align-items-center">
+                <div class="col-12 text-center" data-aos="fade-up">
+                    <h1>Our Gallery</h1>
+                    <p class="lead">Take a look at our state-of-the-art facilities and equipment</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-grid py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up">
+                    <a href="Images/1.jpg" data-lightbox="gallery" data-title="Gallery Image 1">
+                        <div class="gallery-item">
+                            <img src="Images/1.jpg" alt="Gallery Image 1" class="img-fluid">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <a href="Images/2.jpg" data-lightbox="gallery" data-title="Gallery Image 2">
+                        <div class="gallery-item">
+                            <img src="Images/2.jpg" alt="Gallery Image 2" class="img-fluid">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <a href="Images/3.jpg" data-lightbox="gallery" data-title="Gallery Image 3">
+                        <div class="gallery-item">
+                            <img src="Images/3.jpg" alt="Gallery Image 3" class="img-fluid">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4" data-aos="fade-up">
+                    <a href="Images/4.jpg" data-lightbox="gallery" data-title="Gallery Image 4">
+                        <div class="gallery-item">
+                            <img src="Images/4.jpg" alt="Gallery Image 4" class="img-fluid">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <a href="Images/5.jpeg" data-lightbox="gallery" data-title="Gallery Image 5">
+                        <div class="gallery-item">
+                            <img src="Images/5.jpeg" alt="Gallery Image 5" class="img-fluid">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <a href="Images/6.jpeg" data-lightbox="gallery" data-title="Gallery Image 6">
+                        <div class="gallery-item">
+                            <img src="Images/6.jpeg" alt="Gallery Image 6" class="img-fluid">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4" data-aos="fade-up">
+                    <a href="Images/7.jpeg" data-lightbox="gallery" data-title="Gallery Image 7">
+                        <div class="gallery-item">
+                            <img src="Images/7.jpeg" alt="Gallery Image 7" class="img-fluid">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <a href="Images/8.jpeg" data-lightbox="gallery" data-title="Gallery Image 8">
+                        <div class="gallery-item">
+                            <img src="Images/8.jpeg" alt="Gallery Image 8" class="img-fluid">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <a href="Images/9.jpeg" data-lightbox="gallery" data-title="Gallery Image 9">
+                        <div class="gallery-item">
+                            <img src="Images/9.jpeg" alt="Gallery Image 9" class="img-fluid">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4" data-aos="fade-up">
+                    <a href="Images/10.jpeg" data-lightbox="gallery" data-title="Gallery Image 10">
+                        <div class="gallery-item">
+                            <img src="Images/10.jpeg" alt="Gallery Image 10" class="img-fluid">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <a href="Images/11.jpeg" data-lightbox="gallery" data-title="Gallery Image 11">
+                        <div class="gallery-item">
+                            <img src="Images/11.jpeg" alt="Gallery Image 11" class="img-fluid">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <a href="Images/12.jpeg" data-lightbox="gallery" data-title="Gallery Image 12">
+                        <div class="gallery-item">
+                            <img src="Images/12.jpeg" alt="Gallery Image 12" class="img-fluid">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> +91 99786 87250</p>
+                    <p><i class="fas fa-envelope"></i> info@flyfitgym.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 4th Floor, Signet Paza Krunal Char Rasta Gotri, Subhanpura Road, Gujarat 390021</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/gym_fly_fit/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    <style>
+    .lightboxOverlay, .lightbox {
+        z-index: 9999 !important;
+    }
+    .lb-image {
+        max-width: 90vw !important;
+        max-height: 80vh !important;
+    }
+    </style>
+</body>
+</html> 

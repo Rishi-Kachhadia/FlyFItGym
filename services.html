@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facilities - Fly Fit Gym</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .service-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .pricing-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .price {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin: 1rem 0;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0;
+        }
+        
+        .feature-list li {
+            margin: 0.5rem 0;
+            color: #666;
+        }
+        
+        .feature-list li i {
+            color: var(--primary-color);
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="Images/Logo.jpeg" alt="Fly Fit Gym Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="services.html">Facilities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Facilities Hero Section -->
+    <section class="services-hero">
+        <div class="container">
+            <div class="row min-vh-100 align-items-center">
+                <div class="col-12 text-center" data-aos="fade-up">
+                    <h1>Facilities</h1>
+                    <p class="lead">Discover our comprehensive range of gym facilities</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section class="facilities-section py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-12 text-center">
+                    <h2 class="section-title" style="color: #EF7013;">Facilities</h2>
+                </div>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="feature-box text-center p-4 shadow rounded-4 bg-white h-100">
+                        <i class="fas fa-heartbeat fa-2x mb-3" style="color: #EF7013;"></i>
+                        <h5>Cardio Vascular Section</h5>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-box text-center p-4 shadow rounded-4 bg-white h-100">
+                        <i class="fas fa-dumbbell fa-2x mb-3" style="color: #EF7013;"></i>
+                        <h5>Strength Training</h5>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-box text-center p-4 shadow rounded-4 bg-white h-100">
+                        <i class="fas fa-weight-hanging fa-2x mb-3" style="color: #EF7013;"></i>
+                        <h5>Free Weight Area</h5>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="feature-box text-center p-4 shadow rounded-4 bg-white h-100">
+                        <i class="fas fa-running fa-2x mb-3" style="color: #EF7013;"></i>
+                        <h5>Cross Fit Area</h5>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-box text-center p-4 shadow rounded-4 bg-white h-100">
+                        <i class="fas fa-music fa-2x mb-3" style="color: #EF7013;"></i>
+                        <h5>Aerobic & Zumba</h5>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-box text-center p-4 shadow rounded-4 bg-white h-100">
+                        <i class="fas fa-user-check fa-2x mb-3" style="color: #EF7013;"></i>
+                        <h5>Qualified Trainers</h5>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="feature-box text-center p-4 shadow rounded-4 bg-white h-100">
+                        <i class="fas fa-user-tie fa-2x mb-3" style="color: #EF7013;"></i>
+                        <h5>Qualified Personal Trainers</h5>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-box text-center p-4 shadow rounded-4 bg-white h-100">
+                        <i class="fas fa-apple-alt fa-2x mb-3" style="color: #EF7013;"></i>
+                        <h5>Nutritionists</h5>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-box text-center p-4 shadow rounded-4 bg-white h-100">
+                        <i class="fas fa-shower fa-2x mb-3" style="color: #EF7013;"></i>
+                        <h5>Shower</h5>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="feature-box text-center p-4 shadow rounded-4 bg-white h-100">
+                        <i class="fas fa-chart-line fa-2x mb-3" style="color: #EF7013;"></i>
+                        <h5>Regular Fat Analysis</h5>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-box text-center p-4 shadow rounded-4 bg-white h-100">
+                        <i class="fas fa-bicycle fa-2x mb-3" style="color: #EF7013;"></i>
+                        <h5>Spinning</h5>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-box text-center p-4 shadow rounded-4 bg-white h-100">
+                        <i class="fas fa-road fa-2x mb-3" style="color: #EF7013;"></i>
+                        <h5>Running Grass Track</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Membership Plans</h2>
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="pricing-card">
+                        <h3>1 Month</h3>
+                        <div class="price">₹2000</div>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Access to all facilities</li>
+                            <li><i class="fas fa-check"></i> Group classes</li>
+                            <li><i class="fas fa-check"></i> Locker room access</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary">Join Now</a>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pricing-card">
+                        <h3>6 Months</h3>
+                        <div class="price">₹6000</div>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> All 1 Month features</li>
+                            <li><i class="fas fa-check"></i> Nutrition consultation</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary">Join Now</a>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pricing-card">
+                        <h3>1 Year</h3>
+                        <div class="price">₹10000</div>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> All 6 Months features</li>
+                            <li><i class="fas fa-check"></i> Priority booking</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary">Join Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> +91 99786 87250</p>
+                    <p><i class="fas fa-envelope"></i> info@flyfitgym.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 4th Floor, Signet Paza Krunal Char Rasta Gotri, Subhanpura Road, Gujarat 390021</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/gym_fly_fit/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html> 
